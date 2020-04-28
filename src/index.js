@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import AllPlants from './AllPlants';
 import * as serviceWorker from './serviceWorker';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import DisplayData from './DisplayData'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <Router>
+    <Route exact path="/" component={AllPlants}/>
+
+    <Route exact path="/plant/:plantId" component={DisplayData}/>
+  </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

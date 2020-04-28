@@ -1,6 +1,11 @@
 
 const images = [
   {
+    id: 0,
+    name: "Aloe vera",
+    imageUrl: "./assets/aloe.jpg",
+  },
+  {
     id: 1,
     name: "African Mask",
     imageUrl: "./assets/african-mask.jpg",
@@ -94,7 +99,7 @@ const images = [
     id: 19,
     name: "Phalaenopsis Orchid",
     imageUrl: "./assets/orchid.jpg",
- },
+  },
   {
     id: 20,
     name: "Peperomia",
@@ -174,11 +179,6 @@ const images = [
     id: 35,
     name: "String of pearls",
     imageUrl: "./assets/string-of-pearls.jpg",
-  },
-  {
-    id: 36,
-    name: "Aloe",
-    imageUrl: "./assets/aloe.jpg",
   },
 ];
 
