@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import firebase from './firebase'
+import data from './data'
 
 
 class Plants extends Component {
@@ -13,8 +14,10 @@ class Plants extends Component {
   }
 
   componentDidMount(){
+    //get id from props matching the images
     const id = parseInt(this.props.match.params.plantId)
     console.log(id)
+    //get plant that matches user input from firebase
     const dbRef = firebase.database().ref(`/${id}`)
     dbRef.on('value', (result)=>{
     console.log(result.val())
@@ -64,16 +67,35 @@ class Plants extends Component {
 
   
   render(){
-    // console.log(this.props.match.params.plantId)
-    return(
-      <div className="plantInfoContainer">
-        <h1>{this.state.selectedPlant.name}</h1>
-        {/* <p>{props.getPlant[0].water}</p>
-        <p>{props.getPlant[0].light}</p>
-        <p>{props.getPlant[0].repotting}</p>
-        <p>{props.getPlant[0].moreInfo}</p>  */}
-      </div>
-    )
+    return (
+      <section className="plantInfoContainer">
+        <h1 className="plantName">{this.state.selectedPlant.name}</h1>
+
+        <div className="iconContainer">
+          <img class="icons" src="../assets/water.png" />
+          <p>{this.state.selectedPlant.water}</p>
+        </div>
+        <div className="breakLine"></div>
+
+        <div className="iconContainer">
+          <img class="icons" src="../assets/sun.png" />
+          <p>{this.state.selectedPlant.light}</p>
+        </div>
+        <div className="breakLine"></div>
+
+        <div className="iconContainer">
+          <img class="icons" src="../assets/repot.png" />
+          <p>{this.state.selectedPlant.repotting}</p>
+        </div>
+        <div className="breakLine"></div>
+
+        <div className="iconContainer">
+          <img class="icons" src="../assets/moredeets.png" />
+          <p>{this.state.selectedPlant.moreInfo}</p>
+        </div>
+        <div className="breakLine"></div>
+      </section>
+    );
   }
 }
 
