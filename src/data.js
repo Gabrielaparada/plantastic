@@ -42,7 +42,7 @@ const images = [
   },
   {
     id: 8,
-    name: "Corn Plant",
+    name: "Dracaena Fragrans",
     imageUrl: "./assets/corn-plant.png",
   },
   {
