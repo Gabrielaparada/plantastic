@@ -1,15 +1,14 @@
 import React, { Component} from 'react';
 import firebase from './firebase'
-import data from './data'
+
 
 
 class Plants extends Component {
-
   constructor(){
     super()
     this.state={
       plants: [],
-      selectedPlant: {}
+      selectedPlant: {},
     }
   }
 
@@ -28,72 +27,94 @@ class Plants extends Component {
         water: dataFirebase.water,
         moreInfo: dataFirebase.moreInfo,
         repotting: dataFirebase.repotting,
-        name: dataFirebase.name
+        name: dataFirebase.name,
+        id: dataFirebase.id,
+        rating: dataFirebase.rating
       }
-    console.log(selectedPlant)
     this.setState({
       selectedPlant: selectedPlant
     })
     })
     }
-    
 
-  // componentDidMountToBeDeleted(){
-  //   const dbRef = firebase.database().ref()
-  //   dbRef.on('value', (result)=> {
-  //     //1 store data coming from firebase on a a variable
-  //     const data = result.val()
-  //     //2 transform object into an array
-  //     //3 create empty array to hold data
-  //     const plantsArray = [];
-  //     for(let key in data){
-  //       // //destructuring
-  //       // const {light, water, moreInfo, repotting, id } = data[key]
-  //       plantsArray.push({ 
-  //         id: data[key].id, 
-  //         light: data[key].light, 
-  //         water: data[key].water,
-  //         repotting: data[key].repotting,
-  //         moreInfo: data[key].moreInfo,
-  //         name: data[key].name})
-  //     }
-  //     //4 use data to update state
-  //     this.setState({
-  //       plants: plantsArray
-  //     })
-      
+  // favorite = () => {
+  //   const dbRef = firebase.database().ref();
+  //   const favPlant = this.state.selectedPlant
+  //   console.log(favPlant)
+  //   console.log(dbRef)
+  //  const dbRef = firebase.database().ref();
+
+  // this.setState({
+  //   saveAsFavorite: favPlant
   //   })
   // }
+
+
+  counterUp = () => {
+    const id = this.state.selectedPlant.id;
+    // console.log(favPlant)
+    const dbRef = firebase.database().ref(`/${id}/rating`);
+    console.log(dbRef)
+    dbRef.once('value', (result)=> {
+      const results = result.val()
+      dbRef.set(results + 1)
+      console.log(results)
+    })
+    
+
+
+    
+  }
 
   
   render(){
     return (
       <section className="plantInfoContainer">
-        <h1 className="plantName">{this.state.selectedPlant.name}</h1>
+        <h1 className="plantTitle">{this.state.selectedPlant.name}</h1>
 
         <div className="iconContainer">
-          <img class="icons" src="../assets/water.png" />
+          <img
+            className="icons"
+            src="../assets/water.png"
+            alt="Water schedule"
+          />
           <p>{this.state.selectedPlant.water}</p>
         </div>
         <div className="breakLine"></div>
 
         <div className="iconContainer">
-          <img class="icons" src="../assets/sun.png" />
+          <img className="icons" src="../assets/sun.png" alt="Sunlight" />
           <p>{this.state.selectedPlant.light}</p>
         </div>
         <div className="breakLine"></div>
 
         <div className="iconContainer">
-          <img class="icons" src="../assets/repot.png" />
+          <img
+            className="icons"
+            src="../assets/repot.png"
+            alt="Repotting tips"
+          />
           <p>{this.state.selectedPlant.repotting}</p>
         </div>
         <div className="breakLine"></div>
 
         <div className="iconContainer">
-          <img class="icons" src="../assets/moredeets.png" />
+          <img
+            className="icons"
+            src="../assets/moredeets.png"
+            alt="Extra details"
+          />
           <p>{this.state.selectedPlant.moreInfo}</p>
         </div>
         <div className="breakLine"></div>
+
+        {/* <button onClick={this.counterUp}>Add this plant to favorites</button> */}
+        <div className="likesContainer">
+          <button className="likeButton" onClick={this.counterUp}>
+            <i class="fas fa-heart"></i>
+          </button>
+          <p className="likesNumber">Likes:{this.state.selectedPlant.rating}</p>
+        </div>
       </section>
     );
   }

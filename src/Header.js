@@ -5,9 +5,12 @@ class Header extends Component {
   render() {
     return (
       <header className="landingPage">
-        <div className="textContainer">
+        <div className="textContainer wrapper">
           <h1 className="title">Plantastic</h1>
-          <p className="titleDesc">A guide that will help you take better care of your plants</p>
+          <p className="titleDesc">
+            A guide that will help you take better care of your plants
+          </p>
+            <i className="fas fa-chevron-down"></i>
         </div>
       </header>
     );

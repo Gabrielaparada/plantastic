@@ -98,7 +98,12 @@ h5{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  /* background-color: #63A194; */
 }
+
+/* .images:hover{
+  background-color: rgba(0,0,0, 0.5);
+} */
 
 
 .anchor{
@@ -109,22 +114,23 @@ text-shadow: 3px 2px 3px rgba(0,0,0,0.64);
 }
 
 
-.plantHover{
-  top: 50%;
-  width: 100%;
-  height: auto;
+.plantName{
+  top: 0;
+  width: 300px;
+  height: 300px; 
   position: absolute;
   text-align: center;
-  /* background: black; */
+  padding-top:130px;
  }  
 
-
-.plantHover:hover{
+.plantName:hover{
   color:white;  /* border:1px solid black; */
   font-size: 2rem;
   text-shadow: 3px 2px 3px rgba(0,0,0,0.64);
+  background-color: rgba(253,218,212, 0.8);
+  width: 300px;
 }
- 
+
 
 
 /*plants info*/
@@ -137,10 +143,11 @@ padding: 10px 15px 10px 15px;
 }
 
 .plantInfoContainer{
+  position: relative;
   margin-top: 35px;
   margin-bottom: 35px;
 }
-.plantName{
+.plantTitle{
   font-family: 'Bebas Neue', cursive;
   text-align: center;
   margin-bottom: 0;
@@ -176,6 +183,33 @@ padding-right: 10px;
   margin-bottom: 40px;
 }
 
+.likeButton{
+  border: none;
+  background: white;
+}
+
+.fa-heart{
+  color: grey
+}
+
+.fa-heart:hover{
+  color:red;
+}
+
+
+.likesContainer{
+  display:flex;
+}
+.likesNumber{
+  align-self: center;
+}
+/* 
+.fav{
+  position: absolute;
+  font-size: 2rem;
+  top: 0;
+  right: -108px;
+} */
 
 
 

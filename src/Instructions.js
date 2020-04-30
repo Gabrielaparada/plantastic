@@ -7,8 +7,8 @@ class Intro extends Component {
 
   render() {
     return (
-      <div className="intro">
-        <img className="introImg" src="./assets/dontLetFear.jpg" />
+      <div className="intro wrapper">
+        <img className="introImg" src="./assets/dontLetFear.jpg"  alt="Don't let the fear of not having enough space preventing you from buying more plants"/>
         <h4>Struggling to keep your plants alive?</h4>
         <h5>We can help!</h5>
         <p className="introText">
@@ -18,7 +18,7 @@ class Intro extends Component {
           to care for it!
         </p>
 
-        <button onClick={this.props.toggleState}>Show me some plants!</button>
+        {/* <button onClick={this.props.toggleState}>Show me some plants!</button> */}
       </div>
     );
   }

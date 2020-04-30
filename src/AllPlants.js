@@ -3,6 +3,7 @@ import Header from './Header'
 import Intro from './Instructions'
 import DisplayImages from './DisplayingImages'
 import './App.css';
+import Favorites from './Favorites'
 
 
 class App extends Component {
