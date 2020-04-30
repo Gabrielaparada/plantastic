@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
 class Intro extends Component {
 
 
@@ -16,6 +17,7 @@ class Intro extends Component {
           you are interested on click on the image the get more deets about how
           to care for it!
         </p>
+
         <button onClick={this.props.toggleState}>Show me some plants!</button>
       </div>
     );

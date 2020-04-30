@@ -13,8 +13,9 @@ class DisplayImages extends Component {
           {images.map((image, index) => {
             return (
               //add link to plant/id
-              <Link key={index} to={`/plant/${image.id}`}>
-                <img id={image.id} src={image.imageUrl} alt={image.name} />
+              <Link className="anchor" key={index} to={`/plant/${image.id}`}>
+                <img className="plant" id={image.id} src={image.imageUrl} alt={image.name} />
+                <p className="plantHover">{image.name}</p>
               </Link>
             );
           })}

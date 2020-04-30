@@ -58,8 +58,8 @@ width: 77%;
 margin: 0 auto;
 text-align: center;
 font-size: 2.5rem;
-padding-top:60px;
-padding-bottom: 100px; 
+padding-top:100px;
+padding-bottom:200px;
 }
 
 .introImg{
@@ -94,7 +94,37 @@ h5{
 /*images*/
 .images{
   clear: both;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
+
+
+.anchor{
+position:relative;
+color:black;
+font-family: 'Lato', sans-serif;
+text-shadow: 3px 2px 3px rgba(0,0,0,0.64);
+}
+
+
+.plantHover{
+  top: 50%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  /* background: black; */
+ }  
+
+
+.plantHover:hover{
+  color:white;  /* border:1px solid black; */
+  font-size: 2rem;
+  text-shadow: 3px 2px 3px rgba(0,0,0,0.64);
+}
+ 
 
 
 /*plants info*/
