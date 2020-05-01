@@ -31,9 +31,10 @@ class DisplayImages extends Component {
         return plant2.rating - plant1.rating
       })
 
-      //loop through array and match images with id 
+      //loop through plantsRating array and get id
       const ratedPlant = plantsRating.map((plant)=>{
 
+      //filter through array and return images and matched id
       const foundImage = images.filter((image)=>{
           return image.id === plant.id
         })
@@ -47,7 +48,7 @@ class DisplayImages extends Component {
     });
   }
 
-
+//toggle function
   clickHandler = () => {
     this.setState({
       showSorted: true
@@ -55,32 +56,28 @@ class DisplayImages extends Component {
   }
 
 
-
   render() {
     const mappedArray = this.state.showSorted ? this.state.sortedImages : images;
       return (
-        <div className="galleryContainer wrapper clearfix">
+        <section className="galleryContainer wrapper">
           <h2 className="plantGallery">Plant Gallery</h2>
           <div className="galleryButton">
-            <button className="sortingButton" onClick={this.clickHandler}>Sort gallery by rating!</button>
+            <button className="sortingButton" onClick={this.clickHandler}>Click here to sort gallery by rating</button>
           </div>
+
           <div className="images">
+            {/*map through images array*/}
             {mappedArray.map((image, index) => {
               return (
-                //add link to plant/id
+                //route to plant content. 
                 <Link className="anchor" key={index} to={`/plant/${image.id}`}>
                   <p className="plantName">{image.name}</p>
-                  <img
-                    className="plantImage"
-                    id={image.id}
-                    src={image.imageUrl}
-                    alt={image.name}
-                  />
+                  <img className="plantImage" id={image.id} src={image.imageUrl} alt={image.name}/>
                 </Link>
               );
             })}
           </div>
-        </div>
+        </section>
       );
     }
   }

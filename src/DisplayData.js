@@ -15,13 +15,12 @@ class Plants extends Component {
   componentDidMount(){
     //get id from props matching the images
     const id = parseInt(this.props.match.params.plantId)
-    console.log(id)
+  
     //get plant that matches user input from firebase
     const dbRef = firebase.database().ref(`/${id}`)
     dbRef.on('value', (result)=>{
     console.log(result.val())
     const dataFirebase = result.val();
-    // console.log(plantFirebase.light)
     const selectedPlant = {
         light: dataFirebase.light,
         water: dataFirebase.water,
@@ -39,9 +38,7 @@ class Plants extends Component {
 
   counterUp = () => {
     const id = this.state.selectedPlant.id;
-    // console.log(favPlant)
     const dbRef = firebase.database().ref(`/${id}/rating`);
-    console.log(dbRef)
     dbRef.once('value', (result)=> {
       const results = result.val()
       dbRef.set(results + 1)
@@ -62,12 +59,14 @@ class Plants extends Component {
           />
           <p className="information">{this.state.selectedPlant.water}</p>
         </div>
+
         <div className="breakLine"></div>
 
         <div className="iconContainer">
           <img className="icons" src="../assets/sun.png" alt="Sunlight" />
           <p className="information">{this.state.selectedPlant.light}</p>
         </div>
+
         <div className="breakLine"></div>
 
         <div className="iconContainer">
@@ -78,6 +77,7 @@ class Plants extends Component {
           />
           <p className="information">{this.state.selectedPlant.repotting}</p>
         </div>
+
         <div className="breakLine"></div>
 
         <div className="iconContainer">
@@ -88,9 +88,9 @@ class Plants extends Component {
           />
           <p className="information">{this.state.selectedPlant.moreInfo}</p>
         </div>
+
         <div className="breakLine"></div>
 
-        {/* <button onClick={this.counterUp}>Add this plant to favorites</button> */}
         <div className="likesContainer">
           <button className="likeButton" onClick={this.counterUp}>
             <i class="fas fa-heart"></i>
