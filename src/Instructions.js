@@ -7,19 +7,22 @@ class Intro extends Component {
 
   render() {
     return (
-      <div className="intro wrapper">
-        <img className="introImg" src="./assets/dontLetFear.jpg"  alt="Don't let the fear of not having enough space preventing you from buying more plants"/>
+      <main className="intro wrapper">
         <h4>Struggling to keep your plants alive?</h4>
         <h5>We can help!</h5>
         <p className="introText">
-          Plantastic is database that contains some of the most popular house
-          plants. Take a quick look through our gallery, once you find the plant
-          you are interested on click on the image the get more deets about how
-          to care for it!
+          Plantastic is database built with love for all the plant lovers out
+          there, whether you are a novice or a plant snob this is for you.
         </p>
-
-        {/* <button onClick={this.props.toggleState}>Show me some plants!</button> */}
-      </div>
+        <p className="introText">
+          We've compiled a list of some of the most popular house plants along
+          with good tips to keep your plant babies happy.
+          Take a quick look
+          through our gallery, once you find the plant you are interested on
+          click on the image to get more deets.
+        </p>
+        <p className="introText last">We are working on growing the list.</p>
+      </main>
     );
   }
 }

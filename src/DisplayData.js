@@ -37,19 +37,6 @@ class Plants extends Component {
     })
     }
 
-  // favorite = () => {
-  //   const dbRef = firebase.database().ref();
-  //   const favPlant = this.state.selectedPlant
-  //   console.log(favPlant)
-  //   console.log(dbRef)
-  //  const dbRef = firebase.database().ref();
-
-  // this.setState({
-  //   saveAsFavorite: favPlant
-  //   })
-  // }
-
-
   counterUp = () => {
     const id = this.state.selectedPlant.id;
     // console.log(favPlant)
@@ -59,14 +46,9 @@ class Plants extends Component {
       const results = result.val()
       dbRef.set(results + 1)
       console.log(results)
-    })
-    
-
-
-    
+    })    
   }
 
-  
   render(){
     return (
       <section className="plantInfoContainer">
@@ -78,13 +60,13 @@ class Plants extends Component {
             src="../assets/water.png"
             alt="Water schedule"
           />
-          <p>{this.state.selectedPlant.water}</p>
+          <p className="information">{this.state.selectedPlant.water}</p>
         </div>
         <div className="breakLine"></div>
 
         <div className="iconContainer">
           <img className="icons" src="../assets/sun.png" alt="Sunlight" />
-          <p>{this.state.selectedPlant.light}</p>
+          <p className="information">{this.state.selectedPlant.light}</p>
         </div>
         <div className="breakLine"></div>
 
@@ -94,7 +76,7 @@ class Plants extends Component {
             src="../assets/repot.png"
             alt="Repotting tips"
           />
-          <p>{this.state.selectedPlant.repotting}</p>
+          <p className="information">{this.state.selectedPlant.repotting}</p>
         </div>
         <div className="breakLine"></div>
 
@@ -104,7 +86,7 @@ class Plants extends Component {
             src="../assets/moredeets.png"
             alt="Extra details"
           />
-          <p>{this.state.selectedPlant.moreInfo}</p>
+          <p className="information">{this.state.selectedPlant.moreInfo}</p>
         </div>
         <div className="breakLine"></div>
 
@@ -119,8 +101,6 @@ class Plants extends Component {
     );
   }
 }
-
-
 
 export default Plants;
 

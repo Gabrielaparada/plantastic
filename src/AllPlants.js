@@ -3,7 +3,7 @@ import Header from './Header'
 import Intro from './Instructions'
 import DisplayImages from './DisplayingImages'
 import './App.css';
-import Favorites from './Favorites'
+import Footer from './Footer'
 
 
 class App extends Component {
@@ -28,6 +28,7 @@ class App extends Component {
         <Header />
         <Intro toggleState={this.toggleState} />
         <DisplayImages show={this.state.show} />
+        <Footer/>
       </div>
     );
   }

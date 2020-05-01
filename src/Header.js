@@ -10,8 +10,8 @@ class Header extends Component {
           <p className="titleDesc">
             A guide that will help you take better care of your plants
           </p>
-            <i className="fas fa-chevron-down"></i>
         </div>
+        <i className="fas fa-chevron-down"></i>
       </header>
     );
   }

@@ -18,18 +18,17 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .landingPage{
   align-items: center;
   height: 100vh;
-  background: url(../src/assets/background.jpg);
+  background: url(../src/assets/plantsHeader.jpg);
   background-size: cover;
 }
 
 .textContainer {
-  border: 4px solid white;
+  border: 4px solid black; 
   position: relative;
+  /* left:0;
+  right: 0; */
   top:200px;
   width:50%;
-  margin:0 auto;
-  left:0;
-  right: 0
 }
 
 .title{
@@ -38,78 +37,126 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   margin: 0;
   padding-top: 50px;
   letter-spacing: 2px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.30);
 }
 
 .title,
 .titleDesc{
-  color:white;
   text-align: center;
 }
 
 .titleDesc {
   padding-bottom: 50px;
   margin:0;
-  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.fa-chevron-down{
+  color: rgba(0,0,0, 0.5);
+  position:absolute;
+  left:48%;
+  bottom: 30px;
+  font-size: 3.3rem;
+  animation: hover-me .6s infinite ease-in-out alternate;
+}
+
+@keyframes hover-me {
+  100% { transform: translate3d(0, 15px, 0); }
 }
 
 /*intro*/
 .intro{
-width: 77%;
 margin: 0 auto;
 text-align: center;
 font-size: 2.5rem;
-padding-top:100px;
-padding-bottom:200px;
 }
 
-.introImg{
-  width: 390px;
-  float: left;
-  margin-right: 35px;
-}
 
 h4{
   padding-top: 80px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   font-size: 2.8rem;
   line-height: 43px;
   padding-bottom: 10px;
+  padding-top:140px;
+  color: rgba(255,255,255, 0.8);
+  background-color: rgba(90, 111, 69, 0.6);
 }
 
 h5{
   font-family: 'Bebas Neue', cursive;
-  color:#63A194;
+  color: lightyellow;
   padding-bottom: 10px;
+  padding-top:10px;
+  background-color: rgba(90, 111, 69, 0.6);
 }
 
 .introText{
-  font-family: 'Lato', sans-serif;
-  font-size: 1.4rem;
-  line-height: 35px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 36px;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: rgba(90, 111, 69, 0.6);
+}
+
+.last {
+padding-bottom:130px;
 }
 
 
 
 
-/*images*/
+/*plant gallery*/
+
+.galleryContainer{
+  padding-top:100px;
+  clear:both;
+}
+
+.sortingButton{
+  border:1px solid lightgrey;
+  background-color: #b49c73;
+  border-radius: 10px;
+  padding:10px;
+}
+
+.plantImage{
+  width: 300px;
+}
+
+
+.galleryButton{
+  text-align:center;
+  margin-bottom: 18px;
+}
+
+.plantGallery{
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Bebas Neue', cursive;
+  width: 50%;
+  margin:0 auto;
+  padding:10px 10px 50px 10px;
+  color:rgba(90, 111, 69);
+  /* background-image: url(./assets/photo.jpg); */
+}
 .images{
-  clear: both;
   display:flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  /* background-color: #63A194; */
 }
 
-/* .images:hover{
-  background-color: rgba(0,0,0, 0.5);
-} */
 
 
 .anchor{
 position:relative;
 color:black;
-font-family: 'Lato', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-weight: 600;
 text-shadow: 3px 2px 3px rgba(0,0,0,0.64);
 }
 
@@ -124,10 +171,9 @@ text-shadow: 3px 2px 3px rgba(0,0,0,0.64);
  }  
 
 .plantName:hover{
-  color:white;  /* border:1px solid black; */
+  color:white;  
   font-size: 2rem;
-  text-shadow: 3px 2px 3px rgba(0,0,0,0.64);
-  background-color: rgba(253,218,212, 0.8);
+  background-color: rgba(90, 111, 69, 0.6);
   width: 300px;
 }
 
@@ -135,18 +181,18 @@ text-shadow: 3px 2px 3px rgba(0,0,0,0.64);
 
 /*plants info*/
 .plantInfoContainer{
-background: rgba(255,255,255, 0.3);
-border-radius: 10px;
-width: 60%;
-margin: 0 auto;
-padding: 10px 15px 10px 15px;
+  background-image: url(./assets/photo.png);
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px 15px 10px 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-position-x: -100px;
+  background-repeat: no-repeat;
+  border: 1px solid #63A194;
 }
 
-.plantInfoContainer{
-  position: relative;
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
 .plantTitle{
   font-family: 'Bebas Neue', cursive;
   text-align: center;
@@ -156,11 +202,18 @@ padding: 10px 15px 10px 15px;
   padding: 15px 0 15px 0;
 }
 
+.information {
+  background-color: rgba(244,255,255, 0.2);
+  padding:5px;
+  border-radius: 10px;
+}
+
 .icons{
-width:13%;
+width:12%;
 padding-bottom: 15px;
 padding-left: 10px;
 padding-right: 10px;
+flex: 0 0 auto
 }
 
 .iconContainer{
@@ -169,7 +222,7 @@ padding-right: 10px;
 }
 
 .iconContainer p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   margin:0;
   font-size: 1rem;
   line-height: 20px;
@@ -180,6 +233,7 @@ padding-right: 10px;
   border-bottom: 1px solid #63A194;
   width: 30%;
   margin: 0 auto;
+  margin-top: 5px;
   margin-bottom: 40px;
 }
 
@@ -199,19 +253,19 @@ padding-right: 10px;
 
 .likesContainer{
   display:flex;
+  font-family: 'Rajdhani', sans-serif;
 }
 .likesNumber{
   align-self: center;
 }
-/* 
-.fav{
-  position: absolute;
-  font-size: 2rem;
-  top: 0;
-  right: -108px;
-} */
 
 
+
+.footer{
+  font-family: 'Rajdhani', sans-serif;
+  padding:10px;
+  text-align: center;
+}
 
 
 

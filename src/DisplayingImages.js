@@ -15,41 +15,39 @@ class DisplayImages extends Component {
   }
 
   componentDidMount() {
+    //getting data from firebase to sort images by rating
     const dbRef = firebase.database().ref();
     dbRef.on("value", (result) => {
       const plants = result.val();
       const plantsRating = [];
-      // const plantsId = [];
       for (let key in plants) {
-        // plantsId.push(plants[key].id);
         plantsRating.push({
             rating :plants[key].rating, 
             id: plants[key].id
           });
       }
-      //create an array with plant id sorted by rating DONE 
+      //create an array with plant id sorted by rating  
       plantsRating.sort((plant1, plant2)=>{
         return plant2.rating - plant1.rating
       })
-      console.log(plantsRating)
 
       //loop through array and match images with id 
       const ratedPlant = plantsRating.map((plant)=>{
-  
 
       const foundImage = images.filter((image)=>{
           return image.id === plant.id
         })
         return foundImage[0]
       })
-
+      //set array to state
       this.setState({
         sortedImages: ratedPlant
       })
       
     });
   }
-  
+
+
   clickHandler = () => {
     this.setState({
       showSorted: true
@@ -60,13 +58,14 @@ class DisplayImages extends Component {
 
   render() {
     const mappedArray = this.state.showSorted ? this.state.sortedImages : images;
-    // {
       return (
-        <div>
-          <button onClick={this.clickHandler}> Hi</button>
-          <div className="clearfix images wrapper">
-            {mappedArray.map((image, index, id) => {
-              console.log(image)
+        <div className="galleryContainer wrapper clearfix">
+          <h2 className="plantGallery">Plant Gallery</h2>
+          <div className="galleryButton">
+            <button className="sortingButton" onClick={this.clickHandler}>Sort gallery by rating!</button>
+          </div>
+          <div className="images">
+            {mappedArray.map((image, index) => {
               return (
                 //add link to plant/id
                 <Link className="anchor" key={index} to={`/plant/${image.id}`}>
@@ -81,12 +80,11 @@ class DisplayImages extends Component {
               );
             })}
           </div>
-          // }
         </div>
       );
     }
   }
-// }
+
 
 export default DisplayImages;
 
