@@ -233,7 +233,7 @@ text-shadow: 4px 4px 4px rgba(0,0,0,0.64);
 }
 
 .information {
-  background-color: rgba(244,255,255, 0.2);
+  background-color: rgba(255,255,255, 0.4);
   padding:5px;
   border-radius: 10px;
 }
@@ -277,6 +277,8 @@ flex: 0 0 auto
 }
 .likesNumber{
   align-self: center;
+  font-weight: 600;
+  padding-top:5px;
 }
 
 .fa-heart{
@@ -297,6 +299,14 @@ flex: 0 0 auto
 
 
 /*media queries*/
+@media (max-width: 958px){
+  .plantInfoContainer{
+    width: 80%;
+    background-position-y: 155px;
+    background-position-x: -202px;
+    transition: all 0.5s;
+  }
+}
 @media(max-width: 788px){
 
   h4{
@@ -313,9 +323,28 @@ flex: 0 0 auto
   .galleryContainer{
     padding-top: 70px;
   }
+
+  .icons{
+    width: 15%;
+    transition: all 0.5s;
+  }
 }
 
 @media (max-width:600px){
+
+  .iconContainer{
+    display: block
+  }
+
+  .icons {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    transition: all 0,5s;
+  }
+  .plantInfoContainer{
+    background-position:-334px;
+  }
 
   .landingPage{
     background-position-x: -96px;
@@ -358,6 +387,12 @@ flex: 0 0 auto
 
 @media (max-width: 400px){
 
+  .icons{
+    width: 32%;
+    padding-bottom:5px;
+    transition: all 0.5s;
+  }
+
   .landingPage{
     background-position-x: -152px;
     transition: all 0.5s;
@@ -384,6 +419,10 @@ flex: 0 0 auto
 
   h4{
     font-size: 2rem;
+  }
+
+  .iconContainer p {
+    font-size: 1rem;
   }
 }
 
