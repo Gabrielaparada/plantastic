@@ -38,7 +38,8 @@ h4,
 .introText,
 .anchor,
 .plantInfoContainer,
-.footer {
+.footer,
+.galleryText {
   font-family: 'Rajdhani', sans-serif
 }
 
@@ -143,8 +144,13 @@ padding-bottom:130px;
 
 /*plant gallery*/
 
+.galleryText{
+  padding:0 15px 14px 15px;
+  margin: 0 auto;
+}
+
 .galleryContainer{
-  padding-top:100px;
+  padding-top:80px;
 }
 
 .sortingButton{
@@ -184,7 +190,7 @@ padding-bottom:130px;
   font-size: 4rem;
   width: 50%;
   margin:0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   color:rgba(90, 111, 69);
 }
 

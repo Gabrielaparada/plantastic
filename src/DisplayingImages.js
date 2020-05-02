@@ -62,8 +62,14 @@ class DisplayImages extends Component {
         <section className="galleryContainer wrapper">
           <h2 className="plantGallery">Plant Gallery</h2>
           <div className="galleryButton">
-            <button className="sortingButton" onClick={this.clickHandler}>Click here to sort gallery by rating</button>
+            <button className="sortingButton" onClick={this.clickHandler}>
+              Click here to sort gallery by rating
+            </button>
           </div>
+          <p className="galleryText">
+            Remember each plant is a unique living thing and may have varying
+            needs, especially in their individual locations.
+          </p>
 
           <div className="images">
             {/*map through images array*/}
