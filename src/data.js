@@ -132,7 +132,7 @@ const images = [
   },
   {
     id: 20,
-    name: "Peperomia",
+    name: "Watermelon Peperomia",
     imageUrl: "assets/peperomia2.jpg",
   },
   {
