@@ -452,7 +452,7 @@ flex: 0 0 auto
   }
 
   .landingPage{
-    background-position-x: -3px;
+    background-position-x: -152px;
     transition: all 0.5s;
   }
   .title{
@@ -481,6 +481,10 @@ flex: 0 0 auto
 
   .iconContainer p {
     font-size: 1rem;
+  }
+
+  .iconsCred{
+    margin-top: 14px;
   }
 }
 
