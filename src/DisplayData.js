@@ -93,7 +93,7 @@ class Plants extends Component {
 
         <div>
           <p className="like">
-            If you enjoyed this, give it a <span role="img" aria-labe="Heart Icon">♥️</span>
+            If you enjoyed this, give it a <span role="img" aria-label="Heart Icon">♥️</span>
           </p>
           <div className="likesContainer">
             <button className="likeButton" onClick={this.counterUp}>
