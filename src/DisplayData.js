@@ -1,8 +1,6 @@
 import React, { Component} from 'react';
 import firebase from './firebase'
 
-
-
 class Plants extends Component {
   constructor(){
     super()
@@ -36,13 +34,13 @@ class Plants extends Component {
     })
     }
 
+  //counter up function for likes displayed on plant's info page.
   counterUp = () => {
     const id = this.state.selectedPlant.id;
     const dbRef = firebase.database().ref(`/${id}/rating`);
     dbRef.once('value', (result)=> {
       const results = result.val()
       dbRef.set(results + 1)
-      console.log(results)
     })    
   }
 

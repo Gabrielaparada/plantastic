@@ -27,14 +27,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*Font styling*/
 .title,
-h5,
+introSubHeading,
 .plantGallery,
 .plantTitle{
   font-family: 'Bebas Neue', cursive;
 }
 
 .titleDesc,
-h4,
+.introTitle,
 .introText,
 .anchor,
 .plantInfoContainer,
@@ -50,7 +50,7 @@ h4,
   text-align: center;
 }
 
-h5,
+.introSubHeading,
 .title{
   text-shadow: 2px 2px 2px rgba(0,0,0,0.30);
 }
@@ -112,7 +112,7 @@ font-size: 2.5rem;
 background-color: rgba(90, 111, 69, 0.7);
 }
 
-h4{
+.introTitle{
   font-size: 2.8rem;
   line-height: 43px;
   padding-bottom: 10px;
@@ -121,7 +121,7 @@ h4{
   text-shadow: 1px 1px 1px rgba(255,255,255,0.80)
 }
 
-h5{
+.introSubHeading{
   color: lightyellow;
   padding-bottom: 10px;
   padding-top:10px;
@@ -138,7 +138,6 @@ h5{
 .last {
 padding-bottom:130px;
 }
-
 
 
 
@@ -206,7 +205,6 @@ text-shadow: 4px 4px 4px rgba(0,0,0,0.64);
   border:1px solid black;
 }
 
-
 .plantName{
   font-size: 1.4rem;
   width: 300px;
@@ -223,7 +221,7 @@ text-shadow: 4px 4px 4px rgba(0,0,0,0.64);
 
 
 
-/*plants data*/
+/*plant's data*/
 .plantInfoContainer{
   background-image: url(./assets/photo.png);
   border-radius: 10px;
@@ -312,18 +310,15 @@ flex: 0 0 auto
 /*footer*/
 
 .footer{
-  /* border-bottom: 1px solid #63A194; */
   background-color: rgba(90, 111, 69, 0.8);
   color:white;
   padding:10px;
   text-align: center;
-  /* margin-top:30px; */
 }
 
 .fa-copyright{
   font-size: 0.7rem;
   margin-right: 2px;
-  /* color: black; */
 }
 
 
@@ -348,7 +343,7 @@ flex: 0 0 auto
 
 @media(max-width: 788px){
 
-  h4{
+  .introTitle{
     padding-top: 60px;
   }
 
@@ -407,7 +402,7 @@ flex: 0 0 auto
     font-size: 2.5rem;
   }
 
-  h4{
+  .introTitle{
     font-size: 2.2rem;
     padding-left: 10px;
     padding-right: 10px;
@@ -457,7 +452,7 @@ flex: 0 0 auto
   }
 
   .landingPage{
-    background-position-x: -152px;
+    background-position-x: -3px;
     transition: all 0.5s;
   }
   .title{
@@ -480,7 +475,7 @@ flex: 0 0 auto
     padding-top:87px;
   }
 
-  h4{
+  .introTitle{
     font-size: 2rem;
   }
 
