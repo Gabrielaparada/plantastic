@@ -123,7 +123,7 @@ const images = [
   {
     id: 24,
     name: "Ponytail Palm",
-    imageUrl: "assets/ponytail.jpg",
+    imageUrl: "assets/ponyTail.jpg",
   },
   {
     id: 22,
