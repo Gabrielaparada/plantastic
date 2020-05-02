@@ -18,7 +18,7 @@ class Intro extends Component {
           We've compiled a list of some of the most popular house plants along
           with good tips to keep your plant babies happy.
           Take a quick look
-          through our gallery, once you find the plant you are interested on
+          through our gallery, once you find the plant you are interested in
           click on the image to get more deets.
         </p>
         <p className="introText last">We are working on growing the list.</p>
