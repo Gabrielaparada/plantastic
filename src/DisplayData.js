@@ -92,7 +92,9 @@ class Plants extends Component {
         <div className="breakLine"></div>
 
         <div>
-          <p className="like">If you enjoyed this, give it a ♥️</p>
+          <p className="like">
+            If you enjoyed this, give it a <span role="img" aria-labe="Heart Icon">♥️</span>
+          </p>
           <div className="likesContainer">
             <button className="likeButton" onClick={this.counterUp}>
               <i className="fas fa-heart"></i>
@@ -101,6 +103,7 @@ class Plants extends Component {
               Likes:{this.state.selectedPlant.rating}
             </p>
           </div>
+          <p className="iconsCred">Icons by IYIKON, Noun Project</p>
         </div>
       </section>
     );

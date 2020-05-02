@@ -12,7 +12,7 @@ class Header extends Component {
           </p>
         </div>
         <i aria-hidden="true" className="fas fa-chevron-down"></i>
-        <span class="sr-only">Chevron pointing down</span>
+        <span className="sr-only">Chevron pointing down</span>
         <span></span>
       </header>
     );

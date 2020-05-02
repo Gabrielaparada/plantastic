@@ -305,12 +305,25 @@ flex: 0 0 auto
 .fa-heart:hover{
   color:red;
 }
+.iconsCred{
+  text-align: right;
+}
 
 /*footer*/
 
 .footer{
+  /* border-bottom: 1px solid #63A194; */
+  background-color: rgba(90, 111, 69, 0.8);
+  color:white;
   padding:10px;
   text-align: center;
+  /* margin-top:30px; */
+}
+
+.fa-copyright{
+  font-size: 0.7rem;
+  margin-right: 2px;
+  /* color: black; */
 }
 
 
@@ -424,17 +437,17 @@ flex: 0 0 auto
   }
 }
 
-@media (max-width: 400px){
-
-  .introText{
-    padding: 0 20px 0 20px;
-  }
+@media (max-width: 400px){ 
 
   .images{
     justify-content: space-evenly;
   }
   .anchor{
     margin-bottom: 19px;
+  }
+
+  .galleryText{
+    padding: 0 12px 14px 12px;
   }
 
   .icons{
