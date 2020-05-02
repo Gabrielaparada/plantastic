@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gabriela-parada-project-five/static/css/main.a29b9aa1.chunk.css",
-    "main.js": "/gabriela-parada-project-five/static/js/main.8736cac9.chunk.js",
-    "main.js.map": "/gabriela-parada-project-five/static/js/main.8736cac9.chunk.js.map",
+    "main.js": "/gabriela-parada-project-five/static/js/main.20be176f.chunk.js",
+    "main.js.map": "/gabriela-parada-project-five/static/js/main.20be176f.chunk.js.map",
     "runtime-main.js": "/gabriela-parada-project-five/static/js/runtime-main.8911b858.js",
     "runtime-main.js.map": "/gabriela-parada-project-five/static/js/runtime-main.8911b858.js.map",
     "static/js/2.d923dd5e.chunk.js": "/gabriela-parada-project-five/static/js/2.d923dd5e.chunk.js",
     "static/js/2.d923dd5e.chunk.js.map": "/gabriela-parada-project-five/static/js/2.d923dd5e.chunk.js.map",
     "index.html": "/gabriela-parada-project-five/index.html",
-    "precache-manifest.aa8bed419aaeab873da1915f3ebea53e.js": "/gabriela-parada-project-five/precache-manifest.aa8bed419aaeab873da1915f3ebea53e.js",
+    "precache-manifest.438396c50473af8e4d679b8814f216ab.js": "/gabriela-parada-project-five/precache-manifest.438396c50473af8e4d679b8814f216ab.js",
     "service-worker.js": "/gabriela-parada-project-five/service-worker.js",
     "static/css/main.a29b9aa1.chunk.css.map": "/gabriela-parada-project-five/static/css/main.a29b9aa1.chunk.css.map",
     "static/js/2.d923dd5e.chunk.js.LICENSE.txt": "/gabriela-parada-project-five/static/js/2.d923dd5e.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.8911b858.js",
     "static/js/2.d923dd5e.chunk.js",
     "static/css/main.a29b9aa1.chunk.css",
-    "static/js/main.8736cac9.chunk.js"
+    "static/js/main.20be176f.chunk.js"
   ]
 }
