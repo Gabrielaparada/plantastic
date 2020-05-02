@@ -13,6 +13,7 @@ class Plants extends Component {
   }
 
   componentDidMount(){
+    document.body.scrollTop = 0;
     //get id from props matching the images
     const id = parseInt(this.props.match.params.plantId)
   

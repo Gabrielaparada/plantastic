@@ -11,7 +11,9 @@ class Header extends Component {
             A guide that will help you take better care of your plants
           </p>
         </div>
-        <i className="fas fa-chevron-down"></i>
+        <i aria-hidden="true" className="fas fa-chevron-down"></i>
+        <span class="sr-only">Chevron pointing down</span>
+        <span></span>
       </header>
     );
   }

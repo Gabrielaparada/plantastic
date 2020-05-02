@@ -13,6 +13,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   width: 100%;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
 
 
 /*Font styling*/
@@ -46,11 +56,10 @@ h5,
 
 
 
-
 /*header page*/
 .landingPage{
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background: url(../src/assets/plantsHeaderedit1.jpg);
   background-size: cover;
 }

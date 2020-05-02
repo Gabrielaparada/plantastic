@@ -5,13 +5,13 @@ import AllPlants from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import DisplayData from './DisplayData'
+import ScrollToTop from './ScrollToTop'
 
-console.log(process.env.PUBLIC_URL);
 ReactDOM.render(
   <React.StrictMode>
     <Router basename={process.env.PUBLIC_URL}>
       <Route exact path="/" component={AllPlants} />
-
+      <ScrollToTop />
       <Route exact path="/plant/:plantId" component={DisplayData} />
     </Router>
   </React.StrictMode>,
