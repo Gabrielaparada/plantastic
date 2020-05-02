@@ -151,6 +151,7 @@ padding-bottom:130px;
 
 .galleryContainer{
   padding-top:80px;
+  margin: 0 auto;
 }
 
 .sortingButton{
@@ -182,7 +183,6 @@ padding-bottom:130px;
 .images{
   display:flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
 }
 
@@ -323,18 +323,20 @@ flex: 0 0 auto
     background-position-x: -202px;
     transition: all 0.5s;
   }
-}
-@media(max-width: 788px){
-
-  h4{
-    padding-top: 60px;
-  }
 
   .introText{
     padding: 0 50px 0 50px;
   }
+
   .last{
-    padding-bottom:60px;
+    padding-bottom:120px;
+  }
+}
+
+@media(max-width: 788px){
+
+  h4{
+    padding-top: 60px;
   }
 
   .galleryContainer{
@@ -380,6 +382,12 @@ flex: 0 0 auto
   .introText{
     font-size: 1rem;
     line-height: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .last{
+    padding-bottom: 70px;
   }
 
   .fa-chevron-down{
@@ -408,14 +416,26 @@ flex: 0 0 auto
     width: 200px;
     transition: all 0.5s;
   }
-   .plantName{
+  .plantName{
     width: 200px;
     height: 200px;
-    padding-top:100px
+    padding-top:100px;
+    transition: all 0.5s;
   }
 }
 
 @media (max-width: 400px){
+
+  .introText{
+    padding: 0 20px 0 20px;
+  }
+
+  .images{
+    justify-content: space-evenly;
+  }
+  .anchor{
+    margin-bottom: 19px;
+  }
 
   .icons{
     width: 32%;
