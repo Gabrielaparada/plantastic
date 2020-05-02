@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "44a79f36ea4b313be1079a3677ff3ec5",
+    "revision": "884cc3ba8698544dbc9bd505abdeac67",
     "url": "/gabriela-parada-project-five/index.html"
   },
   {
-    "revision": "846becd7b4786309222b",
+    "revision": "9f52deee5a4de1219797",
     "url": "/gabriela-parada-project-five/static/css/main.7e5fe9d6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gabriela-parada-project-five/static/js/2.d923dd5e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "846becd7b4786309222b",
-    "url": "/gabriela-parada-project-five/static/js/main.f6263948.chunk.js"
+    "revision": "9f52deee5a4de1219797",
+    "url": "/gabriela-parada-project-five/static/js/main.849f18ba.chunk.js"
   },
   {
     "revision": "b400e211fb16ad63d605",
