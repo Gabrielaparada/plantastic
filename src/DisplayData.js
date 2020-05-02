@@ -92,7 +92,7 @@ class Plants extends Component {
 
         <div className="likesContainer">
           <button className="likeButton" onClick={this.counterUp}>
-            <i class="fas fa-heart"></i>
+            <i className="fas fa-heart"></i>
           </button>
           <p className="likesNumber">Likes:{this.state.selectedPlant.rating}</p>
         </div>

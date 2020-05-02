@@ -8,13 +8,17 @@ import DisplayData from './DisplayData'
 
 ReactDOM.render(
   <React.StrictMode>
-  <Router>
-    <Route exact path="/" component={AllPlants}/>
+    <Router>
+      <Route exact path="/gabriela-parada-project-five" component={AllPlants} />
 
-    <Route exact path="/plant/:plantId" component={DisplayData}/>
-  </Router>
+      <Route
+        exact
+        path="gabriela-parada-project-five/plant/:plantId"
+        component={DisplayData}
+      />
+    </Router>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
