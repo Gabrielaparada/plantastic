@@ -15,11 +15,16 @@ const images = [
     name: "Adansonii",
     imageUrl: "assets/andasonii.jpg",
   },
-{
-  id: 30,
-  name: "String of turtles",
-  imageUrl: "assets/stringOfTurtles.jpg",
-},
+  {
+    id: 30,
+    name: "String of turtles",
+    imageUrl: "assets/stringOfTurtles.jpg",
+  },
+  {
+    id: 42,
+    name: "Tillandsia",
+    imageUrl: "assets/largeTillandasia.jpg",
+  },
   {
     id: 1,
     name: "African Mask",
@@ -31,19 +36,24 @@ const images = [
     imageUrl: "assets/angelWingsBegonia.jpg",
   },
   {
+    id: 43,
+    name: "Bunny Ears Cactus",
+    imageUrl: "assets/bunnyEars.jpg",
+  },
+  {
     id: 9,
     name: "Dragon tree",
     imageUrl: "assets/dragonTree.jpg",
   },
   {
-    id: 8,
-    name: "Dracaena Fragrans",
-    imageUrl: "assets/cornPlant.jpg",
-  },
-  {
     id: 5,
     name: "Asparagus Fer",
     imageUrl: "assets/asparagusFern.jpg",
+  },
+  {
+    id: 8,
+    name: "Dracaena Fragrans",
+    imageUrl: "assets/cornPlant.jpg",
   },
   {
     id: 7,
@@ -61,6 +71,11 @@ const images = [
     imageUrl: "assets/africanViolets.jpg",
   },
   {
+    id: 35,
+    name: "String of pearls",
+    imageUrl: "assets/stringOfPearls.jpg",
+  },
+  {
     id: 11,
     name: "Boston fern",
     imageUrl: "assets/fern.jpg",
@@ -71,9 +86,19 @@ const images = [
     imageUrl: "assets/fiddleFig.jpg",
   },
   {
+    id: 38,
+    name: "Oxalis",
+    imageUrl: "assets/oxalis.jpg",
+  },
+  {
     id: 13,
     name: "Guiana Chestnut",
     imageUrl: "assets/guianaChestnut.jpg",
+  },
+  {
+    id: 39,
+    name: "Echeverria",
+    imageUrl: "assets/echeverria.jpg",
   },
   {
     id: 14,
@@ -85,11 +110,11 @@ const images = [
     name: "Hoya Kerrii",
     imageUrl: "assets/hoyaKerri.jpg",
   },
-{
-  id: 31,
-  name: "Variegated string of hearts",
-  imageUrl: "assets/variegatedStringOfHearts.jpg",
-},
+  {
+    id: 31,
+    name: "Variegated string of hearts",
+    imageUrl: "assets/variegatedStringOfHearts.jpg",
+  },
   {
     id: 16,
     name: "Jade Plant",
@@ -114,6 +139,11 @@ const images = [
     id: 21,
     name: "Pothos",
     imageUrl: "assets/pothos.jpg",
+  },
+  {
+    id: 40,
+    name: "Hens and chicks",
+    imageUrl: "assets/hen.jpg",
   },
   {
     id: 23,
@@ -176,11 +206,6 @@ const images = [
     imageUrl: "assets/zzPlant.jpg",
   },
   {
-    id: 35,
-    name: "String of pearls",
-    imageUrl: "assets/stringOfPearls.jpg",
-  },
-  {
     id: 36,
     name: "African Milk Tree",
     imageUrl: "assets/milkTree.jpg",
@@ -189,21 +214,6 @@ const images = [
     id: 37,
     name: "Caladium",
     imageUrl: "assets/calladium.jpg",
-  },
-  {
-    id: 38,
-    name: "Oxalis",
-    imageUrl: "assets/oxalis.jpg",
-  },
-  {
-    id: 39,
-    name: "Echeverria",
-    imageUrl: "assets/echeverria.jpg",
-  },
-  {
-    id: 40,
-    name: "Hens and chicks",
-    imageUrl: "assets/hen.jpg",
   },
   {
     id: 41,

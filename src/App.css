@@ -314,7 +314,7 @@ flex: 0 0 auto
   }
 
   .introText{
-    padding: 0 50px 0 50px;
+    padding: 0 50px 0 60px;
   }
   .last{
     padding-bottom:50px;
@@ -329,6 +329,7 @@ flex: 0 0 auto
     transition: all 0.5s;
   }
 }
+
 
 @media (max-width:600px){
 
@@ -376,11 +377,23 @@ flex: 0 0 auto
 
   .plantImage{
     width: 250px;
-  }
+  } 
 
   .plantName{
     width: 250px;
     height: 250px;
+    padding-top:100px
+  }
+}
+
+@media (max-width: 500px){
+  .plantImage{
+    width: 200px;
+    transition: all 0.5s;
+  }
+   .plantName{
+    width: 200px;
+    height: 200px;
     padding-top:100px
   }
 }
@@ -407,12 +420,12 @@ flex: 0 0 auto
   }
 
   .plantImage{
-    width: 150px;
+    width: 170px;
   }
 
   .plantName{
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     font-size: 1.2rem;
     padding-top:87px;
   }
