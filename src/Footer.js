@@ -8,7 +8,7 @@ class Footer extends Component {
         <p className="footer">Gabriela Parada 2020</p>
       </footer>
     );
-  }
+  }git 
 }
 
 export default Footer;
