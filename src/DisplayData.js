@@ -91,11 +91,16 @@ class Plants extends Component {
 
         <div className="breakLine"></div>
 
-        <div className="likesContainer">
-          <button className="likeButton" onClick={this.counterUp}>
-            <i className="fas fa-heart"></i>
-          </button>
-          <p className="likesNumber">Likes:{this.state.selectedPlant.rating}</p>
+        <div>
+          <p className="like">If you enjoyed this, give it a ♥️</p>
+          <div className="likesContainer">
+            <button className="likeButton" onClick={this.counterUp}>
+              <i className="fas fa-heart"></i>
+            </button>
+            <p className="likesNumber">
+              Likes:{this.state.selectedPlant.rating}
+            </p>
+          </div>
         </div>
       </section>
     );
