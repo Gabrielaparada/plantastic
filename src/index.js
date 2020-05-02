@@ -6,16 +6,13 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import DisplayData from './DisplayData'
 
+console.log(process.env.PUBLIC_URL);
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Route exact path="/gabriela-parada-project-five" component={AllPlants} />
+    <Router basename={process.env.PUBLIC_URL}>
+      <Route exact path="/" component={AllPlants} />
 
-      <Route
-        exact
-        path="gabriela-parada-project-five/plant/:plantId"
-        component={DisplayData}
-      />
+      <Route exact path="/plant/:plantId" component={DisplayData} />
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

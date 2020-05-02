@@ -70,15 +70,12 @@ class DisplayImages extends Component {
             {mappedArray.map((image, index) => {
               return (
                 //route to plant content.
-                <Link
-                  className="anchor"
-                  key={index}
-                  to={`gabriela-parada-project-five/plant/${image.id}`}>
+                <Link className="anchor" key={index} to={`/plant/${image.id}`}>
                   <p className="plantName">{image.name}</p>
                   <img
                     className="plantImage"
                     id={image.id}
-                    src={`gabriela-parada-project-five/${image.imageUrl}`}
+                    src={`${process.env.PUBLIC_URL}/${image.imageUrl}`}
                     alt={image.name}
                   />
                 </Link>
