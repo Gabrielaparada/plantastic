@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/gabriela-parada-project-five/precache-manifest.acb51d85cdfade85f4c4b211f87bc8d9.js"
+  "/gabriela-parada-project-five/precache-manifest.f98d8ff5a87d4867e5b8b4406b858d3f.js"
 );
 
 self.addEventListener('message', (event) => {
