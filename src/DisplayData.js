@@ -19,7 +19,6 @@ class Plants extends Component {
     //get plant that matches user input from firebase
     const dbRef = firebase.database().ref(`/${id}`)
     dbRef.on('value', (result)=>{
-    console.log(result.val())
     const dataFirebase = result.val();
     const selectedPlant = {
         light: dataFirebase.light,

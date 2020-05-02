@@ -51,7 +51,7 @@ h5,
 .landingPage{
   align-items: center;
   height: 100vh;
-  background: url(../src/assets/plantsHeader.jpg);
+  background: url(../src/assets/plantsHeaderedit1.jpg);
   background-size: cover;
 }
 
@@ -99,7 +99,7 @@ h5,
 .intro{
 margin: 0 auto;
 font-size: 2.5rem;
-background-color: rgba(90, 111, 69, 0.6);
+background-color: rgba(90, 111, 69, 0.7);
 }
 
 h4{
@@ -183,9 +183,9 @@ padding-bottom:130px;
 
 .anchor{
 position:relative;
-color:black;
+color:white;
 font-weight: 600;
-text-shadow: 3px 2px 3px rgba(0,0,0,0.64);
+text-shadow: 4px 4px 4px rgba(0,0,0,0.64);
 }
 
 .anchor:focus{
@@ -199,12 +199,14 @@ text-shadow: 3px 2px 3px rgba(0,0,0,0.64);
   height: 300px; 
   position: absolute;
   padding-top:130px;
+  background-color: rgba(90, 111, 69, 0.3);
 }  
 
 .plantName:hover{
-  color:white;  
-  font-size: 2rem;
-  background-color: rgba(90, 111, 69, 0.3);
+  /* color:black;   */
+  font-size: 0;
+  background-color: transparent;
+
 }
 
 
@@ -292,6 +294,98 @@ flex: 0 0 auto
   text-align: center;
 }
 
+
+
+/*media queries*/
+@media(max-width: 788px){
+
+  h4{
+    padding-top: 60px;
+  }
+
+  .introText{
+    padding: 0 50px 0 50px;
+  }
+  .last{
+    padding-bottom:50px;
+  }
+
+  .galleryContainer{
+    padding-top: 70px;
+  }
+}
+
+@media (max-width:600px){
+
+  .landingPage{
+    background-position-x: -96px;
+    transition: all 0.5s;
+  }
+  .textContainer{
+    width: 86%;
+    transition: all 0.5s;
+  }
+
+  .plantGallery{
+    width: 60%;
+  }
+
+  .introText{
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  .fa-chevron-down{
+    font-size: 2.5rem;
+  }
+
+  h4{
+    font-size: 2.2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .plantImage{
+    width: 250px;
+  }
+
+  .plantName{
+    width: 250px;
+    height: 250px;
+    padding-top:100px
+  }
+}
+
+@media (max-width: 400px){
+
+  .landingPage{
+    background-position-x: -152px;
+    transition: all 0.5s;
+  }
+  .title{
+    padding-top: 30px;
+    font-size: 3.2rem;
+  }
+
+  .titleDesc{
+    padding: 0 10px 30px 10px;
+  }
+
+  .plantImage{
+    width: 150px;
+  }
+
+  .plantName{
+    width: 150px;
+    height: 150px;
+    font-size: 1.2rem;
+    padding-top:87px;
+  }
+
+  h4{
+    font-size: 2rem;
+  }
+}
 
 
 
