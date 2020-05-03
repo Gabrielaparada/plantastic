@@ -8,7 +8,7 @@ class Intro extends Component {
   render() {
     return (
       <main className="intro wrapper">
-        <h4 className="introTitle">Struggling to keep your plants alive?</h4>
+        <h4 id="intro" className="introTitle">Struggling to keep your plants alive?</h4>
         <h5 className="introSubHeading">We can help!</h5>
         <p className="introText">
           Plantastic is database built with love for all the plant lovers out
