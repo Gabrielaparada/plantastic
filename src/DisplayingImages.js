@@ -68,7 +68,7 @@ class DisplayImages extends Component {
           </div>
           <p className="galleryText">
             Remember each plant is a unique living thing and may have varying
-            needs, especially in their individual locations.
+            needs, especially in their individual&nbsp;locations.
           </p>
 
           <div className="images">

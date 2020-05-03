@@ -54,15 +54,15 @@ class Plants extends Component {
             className="icons"
             src="../assets/water.png"
             alt="Water schedule"
-          />
-          <p className="information">{this.state.selectedPlant.water}</p>
+            />
+            <p className="information">Watering: {this.state.selectedPlant.water}</p>
         </div>
 
         <div className="breakLine"></div>
 
         <div className="iconContainer">
           <img className="icons" src="../assets/sun.png" alt="Sunlight" />
-          <p className="information">{this.state.selectedPlant.light}</p>
+          <p className="information">Sunlight: {this.state.selectedPlant.light}</p>
         </div>
 
         <div className="breakLine"></div>
@@ -73,7 +73,7 @@ class Plants extends Component {
             src="../assets/repot.png"
             alt="Repotting tips"
           />
-          <p className="information">{this.state.selectedPlant.repotting}</p>
+          <p className="information">Repotting: {this.state.selectedPlant.repotting}</p>
         </div>
 
         <div className="breakLine"></div>
@@ -84,7 +84,7 @@ class Plants extends Component {
             src="../assets/moredeets.png"
             alt="Extra details"
           />
-          <p className="information">{this.state.selectedPlant.moreInfo}</p>
+          <p className="information">Extra deets: {this.state.selectedPlant.moreInfo}</p>
         </div>
 
         <div className="breakLine"></div>

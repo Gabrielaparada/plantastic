@@ -297,12 +297,15 @@ flex: 0 0 auto
 }
 
 .fa-heart{
-  color: grey
+  padding:30px;
+  margin: -30px;
+  color: grey;
 }
 
 .fa-heart:hover{
   color:red;
 }
+
 .iconsCred{
   text-align: right;
 }
