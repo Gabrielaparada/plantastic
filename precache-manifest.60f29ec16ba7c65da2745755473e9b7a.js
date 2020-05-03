@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c27886048c44d2fc82ec10953f38fbf5",
+    "revision": "06bf9fc16ce660ddc3b49def0792fbd6",
     "url": "/gabriela-parada-project-five/index.html"
   },
   {
