@@ -13,9 +13,8 @@ class Header extends Component {
         </div>
         <a href="#intro">
           <i aria-hidden="true" className="fas fa-chevron-down"></i>
+        <span className="sr-only">Chevron pointing down to the next section of the page</span>
         </a>
-        <span className="sr-only">Chevron pointing down</span>
-        <span></span>
       </header>
     );
   }
