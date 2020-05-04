@@ -12,7 +12,7 @@ class Footer extends Component {
         </p>
       </footer>
     );
-  }git 
+  } 
 }
 
 export default Footer;

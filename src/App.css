@@ -202,7 +202,7 @@ text-shadow: 4px 4px 4px rgba(0,0,0,0.64);
 }
 
 .anchor:focus{
-  border:1px solid black;
+  border:1.5px solid black;
 }
 
 .plantName{

@@ -15,18 +15,13 @@ class App extends Component {
     };
   }
 
-  toggleState = () =>{
-    console.log("hola")
-    this.setState({
-      show:true
-    })
-  }
+
   
   render() {
     return (
       <div className="App">
-        <Header />
-        <Intro toggleState={this.toggleState} />
+        <Header/>
+        <Intro />
         <DisplayImages show={this.state.show} />
         <Footer/>
       </div>
