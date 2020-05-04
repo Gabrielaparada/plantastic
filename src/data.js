@@ -47,7 +47,7 @@ const images = [
   },
   {
     id: 5,
-    name: "Asparagus Fer",
+    name: "Asparagus Fern",
     imageUrl: "assets/asparagusFern.jpg",
   },
   {
