@@ -114,20 +114,3 @@ export default Plants;
 
 
 
-
-
-
-  // handleImageClick = (e) => {
-  //   //get id from image clicked
-  //   const clickedImage = parseInt(e.target.getAttribute('id'))
-  //   console.log(clickedImage, "clicked image")
-  //   //get id from plant that matches the clicked image
-  //   const getPlant = this.state.plants.filter((plant)=>{
-  //     const plantId = plant.id
-  //     return plantId === clickedImage;    
-  //   })
-  //   console.log(getPlant)
-  //   this.setState({
-  //     selectedPlant: getPlant 
-  //   })
-  // }
