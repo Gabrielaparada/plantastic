@@ -8,21 +8,13 @@ import Footer from './Footer'
 
 class App extends Component {
 
-  constructor() {
-    super();
-    this.state = {
-      show: false,
-    };
-  }
-
-
   
   render() {
     return (
       <div className="App">
         <Header/>
         <Intro />
-        <DisplayImages show={this.state.show} />
+        <DisplayImages />
         <Footer/>
       </div>
     );

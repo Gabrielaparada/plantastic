@@ -10,7 +10,8 @@ class DisplayImages extends Component {
     this.state = {
       images : [],
       sortedImages: [],
-      showSorted: false
+      showSorted: false,
+      ratings: []
     };
   }
 
@@ -24,6 +25,9 @@ class DisplayImages extends Component {
         plantsRating.push({
             rating :plants[key].rating, 
             id: plants[key].id
+          });
+          this.setState({
+            ratings: plantsRating
           });
       }
       //create an array with plant id sorted by rating  
@@ -74,6 +78,9 @@ class DisplayImages extends Component {
           <div className="images">
             {/*map through images array*/}
             {mappedArray.map((image, index) => {
+                const rate = this.state.ratings.filter((rate)=>{
+                return rate.id === image.id
+              })
               return (
                 //route to plant content.
                 <Link className="anchor" key={index} to={`/plant/${image.id}`}>
@@ -84,6 +91,11 @@ class DisplayImages extends Component {
                     src={`${process.env.PUBLIC_URL}/${image.imageUrl}`}
                     alt={image.name}
                   />
+                  <div className="plantLikes">
+                    <p className="likesNumber">
+                    {!!rate.length ? <p>Likes:{rate[0].rating}</p> : ''}
+                    </p>
+                  </div>
                 </Link>
               );
             })}
