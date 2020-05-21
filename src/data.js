@@ -151,6 +151,11 @@ const images = [
     imageUrl: "assets/pinkPrayerPlant.jpg",
   },
   {
+    id: 24,
+    name: "Ponytail Palm",
+    imageUrl: "assets/ponytail.jpg",
+  },
+  {
     id: 22,
     name: "Pilea",
     imageUrl: "assets/pilea.jpg",
@@ -190,11 +195,11 @@ const images = [
     name: "Wandering dude",
     imageUrl: "assets/wanderingDude.jpg",
   },
-  // {
-  //   id: 33,
-  //   name: "Yucca",
-  //   imageUrl: "assets/yucca.jpg",
-  // },
+  {
+    id: 33,
+    name: "Yucca",
+    imageUrl: "assets/yucca.jpg",
+  },
   {
     id: 34,
     name: "Zz plant",
