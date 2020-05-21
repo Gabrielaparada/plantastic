@@ -5,7 +5,6 @@ import DisplayImages from './DisplayingImages'
 import './App.css';
 import Footer from './Footer'
 
-
 class App extends Component {
 
   
