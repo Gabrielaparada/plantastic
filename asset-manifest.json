@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/gabriela-parada-project-five/static/css/main.c4ccda44.chunk.css",
-    "main.js": "/gabriela-parada-project-five/static/js/main.af9ab076.chunk.js",
-    "main.js.map": "/gabriela-parada-project-five/static/js/main.af9ab076.chunk.js.map",
-    "runtime-main.js": "/gabriela-parada-project-five/static/js/runtime-main.8911b858.js",
-    "runtime-main.js.map": "/gabriela-parada-project-five/static/js/runtime-main.8911b858.js.map",
-    "static/js/2.63e533fe.chunk.js": "/gabriela-parada-project-five/static/js/2.63e533fe.chunk.js",
-    "static/js/2.63e533fe.chunk.js.map": "/gabriela-parada-project-five/static/js/2.63e533fe.chunk.js.map",
-    "index.html": "/gabriela-parada-project-five/index.html",
-    "precache-manifest.f3d1df12da7ae74326821e203dfd8312.js": "/gabriela-parada-project-five/precache-manifest.f3d1df12da7ae74326821e203dfd8312.js",
-    "service-worker.js": "/gabriela-parada-project-five/service-worker.js",
-    "static/css/main.c4ccda44.chunk.css.map": "/gabriela-parada-project-five/static/css/main.c4ccda44.chunk.css.map",
-    "static/js/2.63e533fe.chunk.js.LICENSE.txt": "/gabriela-parada-project-five/static/js/2.63e533fe.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/gabriela-parada-project-five/static/media/plantsHeaderedit1.382a6da5.jpg"
+    "main.css": "/plantastic/static/css/main.0cba8ce5.chunk.css",
+    "main.js": "/plantastic/static/js/main.c1541bea.chunk.js",
+    "main.js.map": "/plantastic/static/js/main.c1541bea.chunk.js.map",
+    "runtime-main.js": "/plantastic/static/js/runtime-main.1095d205.js",
+    "runtime-main.js.map": "/plantastic/static/js/runtime-main.1095d205.js.map",
+    "static/js/2.1f36a0a1.chunk.js": "/plantastic/static/js/2.1f36a0a1.chunk.js",
+    "static/js/2.1f36a0a1.chunk.js.map": "/plantastic/static/js/2.1f36a0a1.chunk.js.map",
+    "index.html": "/plantastic/index.html",
+    "precache-manifest.b400a0ca3aa9302092175598b8de453b.js": "/plantastic/precache-manifest.b400a0ca3aa9302092175598b8de453b.js",
+    "service-worker.js": "/plantastic/service-worker.js",
+    "static/css/main.0cba8ce5.chunk.css.map": "/plantastic/static/css/main.0cba8ce5.chunk.css.map",
+    "static/js/2.1f36a0a1.chunk.js.LICENSE.txt": "/plantastic/static/js/2.1f36a0a1.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/plantastic/static/media/plantsHeaderedit1.382a6da5.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8911b858.js",
-    "static/js/2.63e533fe.chunk.js",
-    "static/css/main.c4ccda44.chunk.css",
-    "static/js/main.af9ab076.chunk.js"
+    "static/js/runtime-main.1095d205.js",
+    "static/js/2.1f36a0a1.chunk.js",
+    "static/css/main.0cba8ce5.chunk.css",
+    "static/js/main.c1541bea.chunk.js"
   ]
 }
