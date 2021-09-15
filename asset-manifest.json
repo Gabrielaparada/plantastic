@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/plantastic/static/css/main.0cba8ce5.chunk.css",
-    "main.js": "/plantastic/static/js/main.c1541bea.chunk.js",
-    "main.js.map": "/plantastic/static/js/main.c1541bea.chunk.js.map",
+    "main.css": "/plantastic/static/css/main.4a066522.chunk.css",
+    "main.js": "/plantastic/static/js/main.97afbd64.chunk.js",
+    "main.js.map": "/plantastic/static/js/main.97afbd64.chunk.js.map",
     "runtime-main.js": "/plantastic/static/js/runtime-main.1095d205.js",
     "runtime-main.js.map": "/plantastic/static/js/runtime-main.1095d205.js.map",
     "static/js/2.1f36a0a1.chunk.js": "/plantastic/static/js/2.1f36a0a1.chunk.js",
     "static/js/2.1f36a0a1.chunk.js.map": "/plantastic/static/js/2.1f36a0a1.chunk.js.map",
     "index.html": "/plantastic/index.html",
-    "precache-manifest.b400a0ca3aa9302092175598b8de453b.js": "/plantastic/precache-manifest.b400a0ca3aa9302092175598b8de453b.js",
+    "precache-manifest.4dd571f69502754f28e712088a5ce78f.js": "/plantastic/precache-manifest.4dd571f69502754f28e712088a5ce78f.js",
     "service-worker.js": "/plantastic/service-worker.js",
-    "static/css/main.0cba8ce5.chunk.css.map": "/plantastic/static/css/main.0cba8ce5.chunk.css.map",
+    "static/css/main.4a066522.chunk.css.map": "/plantastic/static/css/main.4a066522.chunk.css.map",
     "static/js/2.1f36a0a1.chunk.js.LICENSE.txt": "/plantastic/static/js/2.1f36a0a1.chunk.js.LICENSE.txt",
     "static/media/App.css": "/plantastic/static/media/plantsHeaderedit1.382a6da5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1095d205.js",
     "static/js/2.1f36a0a1.chunk.js",
-    "static/css/main.0cba8ce5.chunk.css",
-    "static/js/main.c1541bea.chunk.js"
+    "static/css/main.4a066522.chunk.css",
+    "static/js/main.97afbd64.chunk.js"
   ]
 }

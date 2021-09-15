@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e110cd453083ca54e6029d35d0dfafcf",
+    "revision": "f00331c1a7431c6b7b4697c624fd5ed5",
     "url": "/plantastic/index.html"
   },
   {
-    "revision": "c07fdf0b0397308e4dc7",
-    "url": "/plantastic/static/css/main.0cba8ce5.chunk.css"
+    "revision": "1c0ab26e577c09137be2",
+    "url": "/plantastic/static/css/main.4a066522.chunk.css"
   },
   {
     "revision": "93b92d60ec6397dffa07",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/plantastic/static/js/2.1f36a0a1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c07fdf0b0397308e4dc7",
-    "url": "/plantastic/static/js/main.c1541bea.chunk.js"
+    "revision": "1c0ab26e577c09137be2",
+    "url": "/plantastic/static/js/main.97afbd64.chunk.js"
   },
   {
     "revision": "52ed8d5c05bdb4979518",
