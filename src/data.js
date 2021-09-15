@@ -195,11 +195,11 @@ const images = [
     name: "Tradescantia Zebrina",
     imageUrl: "assets/wanderingDude.jpg",
   },
-  {
-    id: 33,
-    name: "Yucca",
-    imageUrl: "assets/yucca.jpg",
-  },
+  // {
+  //   id: 33,
+  //   name: "Yucca",
+  //   imageUrl: "assets/yucca.jpg",
+  // },
   {
     id: 34,
     name: "Zz plant",
