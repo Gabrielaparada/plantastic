@@ -192,7 +192,7 @@ const images = [
   },
   {
     id: 32,
-    name: "Wandering dude",
+    name: "Tradescantia Zebrina",
     imageUrl: "assets/wanderingDude.jpg",
   },
   {

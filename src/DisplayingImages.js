@@ -63,13 +63,13 @@ class DisplayImages extends Component {
   render() {
     const mappedArray = this.state.showSorted ? this.state.sortedImages : images;
       return (
-        <section className="galleryContainer wrapper">
+        <section className="galleryContainer">
           <h2 className="plantGallery">Plant Gallery</h2>
-          <div className="galleryButton">
+          {/* <div className="galleryButton">
             <button className="sortingButton" onClick={this.clickHandler}>
               Click here to sort gallery by rating
             </button>
-          </div>
+          </div> */}
           <p className="galleryText">
             Remember each plant is a unique living thing and may have varying
             needs, especially in their individual&nbsp;locations.
